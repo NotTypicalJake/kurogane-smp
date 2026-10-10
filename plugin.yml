@@ -1,0 +1,19 @@
+name: KuroganeSMP
+main: smp.kurogane.KuroganePlugin
+version: 1.1.0
+api-version: '1.21.11'
+commands:
+  ability:
+    description: Open the ability menu or cast an ability
+    usage: /ability [1|2|3|name]
+    aliases: [abilities]
+  trust:
+    description: Manage trusted allies
+    usage: /trust <add|remove|list> [player]
+  kurogane:
+    description: Admin commands
+    usage: /kurogane <race|reroll|give>
+    permission: kurogane.admin
+permissions:
+  kurogane.admin:
+    default: op
